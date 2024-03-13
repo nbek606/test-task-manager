@@ -1,8 +1,5 @@
 <template>
     <div class="task">
-        <div class="task__add">
-            <BaseButton text="Добавить задачку"/>
-        </div>
         <TaskForm 
             :task="taskForTheForm"
             :editing="editing"
@@ -23,7 +20,6 @@
 
 import TaskList from '@/components/tasks/TaskList.vue'
 import TaskForm from '@/components/tasks/TaskForm.vue'
-import BaseButton from '@/components/widgets/BaseButton.vue'
 import { onMounted, computed, ref, reactive} from 'vue'
 import { useStore } from 'vuex'
 import moment from 'moment'
@@ -32,7 +28,6 @@ export default {
     name: "TaskView",
     components: {
         TaskList,
-        BaseButton,
         TaskForm
     },
 
