@@ -1,14 +1,11 @@
 import { createStore } from 'vuex'
 
+import tasks from './tasks'
+import menu from './menu.js'
+
 export default createStore({
-  state: {
-  },
-  getters: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
   modules: {
+    tasks,
+    menu
   }
 })
